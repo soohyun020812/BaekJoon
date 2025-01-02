@@ -11,6 +11,8 @@ public class Main2744{
             if ('A' <= ch && ch <= 'Z')
                 System.out.print((char)('a' + ch - 'A'));
             else System.out.print((char)('A' + ch - 'a'));
+
+            sc.close();
         }
     }
 }
