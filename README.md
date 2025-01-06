@@ -7,4 +7,4 @@ chap01 <br>
 
 >BaekJoon
 
-https://www.acmicpc.net/user/zmxncbv02
+@zmxncbv02
