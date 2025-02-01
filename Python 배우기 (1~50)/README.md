@@ -1,5 +1,5 @@
 > Python 배우기 (1~50)
-- automata
+> - automata
 
 1. 2557	 Hello World
 2. 1000	 A+B
