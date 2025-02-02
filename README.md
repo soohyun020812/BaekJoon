@@ -27,6 +27,6 @@
 
 <hr>
 
->Python 배우기 (1~50)
+17. Python 배우기 (1~50)
 
 @zmxncbv02
