@@ -7,3 +7,5 @@ sum_of_squares = sum(num ** 2 for num in numbers)
 
 # 10으로 나눈 나머지 출력
 print(sum_of_squares % 10)
+
+# print(sum(int(num) ** 2 for num in input().split()) % 10)
