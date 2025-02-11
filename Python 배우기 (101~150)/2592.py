@@ -1,6 +1,8 @@
 # 대표값
 
 import sys
+# collections : 데이터를 효율적으로 다룰 수 있도록 도와주는 모듈
+# Counter : 요소의 개수를 세는 딕셔너리 형태의 클래스
 from collections import Counter
 
 # 10개 숫자 입력받기
