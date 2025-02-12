@@ -22,17 +22,17 @@
 13. 정렬
 14. 집합과 맵
 15. 약수, 배수와 소수 2
-16. 스택, 큐, 덱 <br>
-
-20. 문자열 (string) <br>
-22. 구현 (implementation)
+16. 스택, 큐, 덱
+17. 문자열 (string)
+18. 구현 (implementation)
 
 <hr>
 
 ###### - Python
-17. Python 배우기 (1~50)
-18. 백준 번외 문제
-19. Python 배우기 (51~100) <br>
-21. Python 배우기 (101~150)
+
+1. Python 배우기 (1~50)
+2. 백준 번외 문제
+3. Python 배우기 (51~100)
+4. Python 배우기 (101~150)
 
 ###### @zmxncbv02
