@@ -30,6 +30,8 @@
 17. Python 배우기 (1~50)
 18. 백준 번외 문제
 19. Python 배우기 (51~100)
-20. Python 배우기 (101~150)
+20. 문자열 (string)
+21. Python 배우기 (101~150)
+22. 구현 (implementation)
 
 ###### @zmxncbv02
