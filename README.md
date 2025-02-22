@@ -26,6 +26,7 @@
 17. 문자열 (string)
 18. 구현 (implementation)
 19. 자료구조 (data_structure)
+20. 기초 수학 (foundations_of_mathematics)
 
 <hr>
 
