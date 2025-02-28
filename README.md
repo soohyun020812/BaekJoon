@@ -28,6 +28,8 @@
 19. 자료구조 (data_structure)
 20. 기초 수학 (foundations_of_mathematics)
 21. 누적합 (prefix_sum)
+22. 깊이 우선 탐색 dfs (Depth First Search)
+23. 너비 우선 탐색 bfs (Breadth First Search)
 
 <hr>
 
