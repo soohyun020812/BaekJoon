@@ -2,6 +2,7 @@ package brute_force;
 import java.io.*;
 import java.util.*;
 
+// 9079 동전 게임 
 public class Main9079 {
 	// 3x3 격자의 행, 열, 대각선을 뒤집는 비트마스크
     static final int[] FLIP_MASKS = {
