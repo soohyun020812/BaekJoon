@@ -31,6 +31,7 @@
 22. 깊이 우선 탐색 dfs (depth_first_search)
 23. 너비 우선 탐색 bfs (breadth_first_search)
 24. 완전 탐색 (brute_force)
+25. 투 포인터 (two_pointer)
 
 <hr>
 
