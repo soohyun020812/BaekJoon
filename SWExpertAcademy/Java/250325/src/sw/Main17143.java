@@ -1,7 +1,7 @@
 package sw;
 import java.util.*;
 
-// 낚시왕 
+// 17144 미세먼지 안녕!
 public class Main17143 {
 	// 상어 정보를 저장
     static class Shark {
