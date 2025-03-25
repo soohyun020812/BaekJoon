@@ -1,7 +1,7 @@
 package sw;
 import java.util.*;
 
-// 미세먼지 안녕!
+// 17144 미세먼지 안녕!
 public class Main17144 {
 	// 방 크기 (R x C) 및 실행 시간 T
 	static int R, C, T; 
