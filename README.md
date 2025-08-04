@@ -3,7 +3,7 @@
 
 <hr>
 
->BaekJoon
+> BaekJoon
 ###### - Java
 
 **단계별 순서**
@@ -48,5 +48,12 @@
 <hr>
 
 **삼성 SW 역량 테스트 기출 문제** <br>
+> @baekjoon
 ###### - Java 
 ###### - Python 
+
+<hr>
+
+**★직접 코테 광탈하면서 모은 문제들☆** <br>
+> @danimartinwife
+###### - Python
