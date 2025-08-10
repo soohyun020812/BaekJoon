@@ -83,36 +83,36 @@
 ```python
 for turn in 1..1000:
     for piece in 1..K:
-        if piece is not at bottom of stack: continue // 4번
+        if piece is not at bottom of stack: continue # 4번
         
-        next_r, next_c = calculate_next_position(piece.r, piece.c, piece.d) // 5번
+        next_r, next_c = calculate_next_position(piece.r, piece.c, piece.d) # 5번
         
-        if next_is_out_of_range_or_blue(next_r, next_c): // 6번
-            piece.d = reverse_direction(piece.d) // 방향 반전
-            next_r, next_c = calculate_next_position(piece.r, piece.c, piece.d) // 위치 재계산
+        if next_is_out_of_range_or_blue(next_r, next_c): # 6번
+            piece.d = reverse_direction(piece.d) # 방향 반전
+            next_r, next_c = calculate_next_position(piece.r, piece.c, piece.d) # 위치 재계산
             
-            if next_is_out_of_range_or_blue(next_r, next_c): // 여전히 문제 있으면
-                continue // 이동X
+            if next_is_out_of_range_or_blue(next_r, next_c): # 여전히 문제 있으면
+                continue # 이동X
         
-        // 7번 현재 말부터 위쪽 스택 떼어내기
+        # 7번 현재 말부터 위쪽 스택 떼어내기
         temp_stack = get_stack_from_piece_and_above(piece.r, piece.c, piece.id)
         remove_stack_from_board(piece.r, piece.c, piece.id)
         
-        // 7번 색깔 룰에 따라 스택 처리
+        # 7번 색깔 룰에 따라 스택 처리
         if color[next_r][next_c] == WHITE:
-            append_stack_to_board(next_r, next_c, temp_stack) // 순서 그대로
+            append_stack_to_board(next_r, next_c, temp_stack) # 순서 그대로
         elif color[next_r][next_c] == RED:
-            append_stack_to_board(next_r, next_c, reverse(temp_stack)) // 순서 뒤집어서
+            append_stack_to_board(next_r, next_c, reverse(temp_stack)) # 순서 뒤집어서
         
-        // 8번 이동한 칸의 스택 높이 확인
+        # 8번 이동한 칸의 스택 높이 확인
         if board[next_r][next_c].length >= 4:
             return turn
             
-    // 9번 모든 말 이동 후 턴 확인
+    # 9번 모든 말 이동 후 턴 확인
     if turn >= 1000:
-        break // 1000턴 초과 시 루프 종료
+        break # 1000턴 초과 시 루프 종료
         
-return -1 // 1000턴 안에 안 끝나면
+return -1 # 1000턴 안에 안 끝나면
 ```
 
 ### 핵심 접근법
@@ -122,3 +122,4 @@ return -1 // 1000턴 안에 안 끝나면
 | **자료 구조 설계** | - **보드 상태 저장** : `board[r][c]`에 해당 칸에 쌓여 있는 말들의 번호를 `스택(리스트)` 형태로 저장 (예 : `말 번호[]`)<br/>- **말 상태 저장** : 각 말의 `현재 위치(r, c)`와 `방향(d)` 등을 별도의 배열(예 : `pieces[]`)에 저장하여 빠르게 접근 가능하도록 설계 |
 | **시뮬레이션 순서** | - **턴 반복** : 최대 1000턴까지 게임 진행을 반복<br/>- **말 이동 순서** : 매 턴마다 1번 말부터 K번 말까지 순서대로 이동을 시도<br/>- **스택/상태 업데이트** : 문제 규칙에 맞춰 말들의 스택 이동 및 위치/방향 상태 업데이트를 정확히 수행<br/>- **종료 조건 검사** : 말 이동 직후! 해당 칸의 스택 높이(말 개수)가 4개 이상 되는지 바로 검사하여 종료 조건 확인 |
 | **규칙 변환 (칸 색깔별)** | - **흰색 (0)** : 이동하려는 말부터 그 위 스택 전체를 `원래 순서 그대로` 새로운 칸의 맨 위에 쌓음<br/>- **빨간색 (1)** : 이동하려는 말부터 그 위 스택 전체를 `순서가 뒤집혀서` 새로운 칸의 맨 위에 쌓음 (**⚡중요**)<br/>- **파란색 (2) or 범위 밖** : <br/>&nbsp;&nbsp;1 말의 `방향을 반대로` 변경<br/>&nbsp;&nbsp;2 변경된 방향으로 `이동할 위치를 재계산`<br/>&nbsp;&nbsp;3 재계산된 위치가 여전히 범위 밖이거나 파란색이라면, 해당 말은 **이동하지 않고 제자리에 가만히** 있음<br/>&nbsp;&nbsp;4 그렇지 않다면, 재계산된 위치의 칸 색깔 룰에 따라 이동 |
+
